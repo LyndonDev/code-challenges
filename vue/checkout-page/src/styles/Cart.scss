@@ -1,0 +1,190 @@
+@import '/globals/globals.scss';
+
+/* Main container */
+.container {
+  padding: 18px 12px;
+  max-width: 1200px;
+  margin: auto;
+
+  @media screen {
+    @media (min-width: $breakpoint-sm) {
+      padding: 64px 30px;
+    }
+  }
+}
+
+/* Cart overview section */
+.overview {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 26px;
+
+  &--items,
+  &--subtotal {
+    color: $dark-grey;
+    font-size: 18px;
+  }
+
+  &--items {
+    text-align: left;
+  }
+
+  &--subtotal {
+    text-align: right;
+  }
+
+  &--buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+
+    &:first-child {
+      margin-right: 10px;
+
+      @media screen {
+        @media (min-width: $breakpoint-sm) {
+          margin-right: 0;
+        }
+      }
+    }
+  } /* end buttons */
+}
+
+/* Cart order items section */
+.order {
+  display: none;
+  padding: 0.5rem 0;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+
+  @media screen {
+    @media (min-width: $breakpoint-md) {
+      display: block;
+    }
+  }
+
+  &__labels {
+    display: flex;
+
+    &--product,
+    &--other {
+      width: 50%;
+    }
+
+    &--other {
+      display: flex;
+      span {
+        width: 33%;
+        text-align: right;
+      }
+    }
+  }
+}
+
+/* Cart summary section */
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: $section-padding;
+
+  @media screen {
+    @media (min-width: $breakpoint-md) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__notices {
+    width: 100%;
+
+    @media screen {
+      @media (min-width: $breakpoint-md) {
+        width: 60%;
+      }
+    }
+  }
+
+  &__notice {
+    display: block;
+
+    &:not(:last-child) {
+      padding-bottom: 18px;
+    }
+  }
+
+  &__checkout {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen {
+      @media (min-width: $breakpoint-md) {
+        width: 40%;
+      }
+    }
+
+    .btn {
+      margin-left: auto;
+    }
+  }
+
+  &__subtotal,
+  &__shipping {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__subtotal {
+    margin-bottom: 26px;
+  }
+}
+
+/* Cart Mastercard promo section */
+.promo {
+  border-top: 1px solid $light-grey;
+  display: flex;
+  padding: $section-padding-double;
+
+  &__image {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    img {
+      max-width: 250px;
+    }
+  }
+}
+
+/* Saved for later section */
+.saved {
+  padding: $section-padding;
+  border-top: 1px solid $light-grey;
+
+
+
+  &__labels {
+    display: flex;
+
+    &--product,
+    &--other {
+      width: 50%;
+    }
+
+    &--other {
+      display: flex;
+      span {
+        width: 33%;
+        text-align: right;
+      }
+    }
+  }
+}
+
+/* Empty cart section */
+.cart__empty {
+  padding: $section-padding-double;
+  color: $grey;
+}

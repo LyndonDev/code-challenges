@@ -1,0 +1,65 @@
+// Buttons
+.btn {
+  font-size: 16px;
+  padding: 10px 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  @media screen {
+    @media (min-width: $breakpoint-sm) {
+      padding: 16px 32px;
+    }
+  }
+
+  &--primary {
+    color: $white;
+    background-color: $dark-blue;
+    border-color: $dark-blue;
+
+    &:hover {
+      background: $darker-blue;
+      border-color: $darker-blue;
+    }
+  }
+
+  &--secondary {
+    color: $dark-grey;
+    background-color: $white;
+    border-color: $grey;
+
+    &:hover {
+      background-color: $lighter-grey;
+    }
+  }
+
+  &--small {
+    color: $dark-grey;
+    background-color: $white;
+    border-color: $grey;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 16px;
+
+    &:hover {
+      background-color: $lighter-grey;
+    }
+  }
+
+  /* Plus and minus buttons on the item quantity field */
+  &--increment,
+  &--decrement {
+    background: $white;
+    border-color: $dark-grey;
+    border-radius: 50%;
+    display: inline;
+    font-size: 12px;
+    line-height: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+
+  &--decrement:disabled {
+    border-color: $light-grey;
+  }
+}

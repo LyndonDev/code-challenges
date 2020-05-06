@@ -1,0 +1,3 @@
+export default {
+  api: 'cc1-eef89f0f06262f4bcf93a53f1d32bd40267faf48bce67d4497f4dd60cdfb2366-58149935efaed59885b30744935de49f201e91c8'
+}

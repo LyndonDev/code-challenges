@@ -1,0 +1,78 @@
+@import '~@rei/cdr-assets/dist/cdr-fonts.css';
+
+// Type variables
+@mixin type-heading-two {
+  font-family: Sentinel, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@mixin type-heading-three {
+  font-family: Sentinel, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin type-heading-six {
+  font-family: Sentinel, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin type-body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@mixin type-link {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: medium;
+  font-size: 15sp;
+  line-height: 24sp;
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+// Effects
+$box-shadow: 0 2px 3px 1px rgba(102, 102, 102, .1);
+
+// Text elements
+h2 {
+  @include type-heading-two;
+  margin: 0;
+  color: $dark-grey;
+}
+
+h3 {
+  @include type-heading-three;
+  margin: 0;
+  color: $dark-grey;
+}
+
+h6 {
+  @include type-heading-six;
+  margin: 0;
+}
+
+p,
+span,
+label {
+  @include type-body;
+}
+
+a {
+  @include type-link;
+}

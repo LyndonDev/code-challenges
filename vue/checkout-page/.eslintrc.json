@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "parserOptions": { "parser": "babel-eslint" },
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/recommended"
+  ],
+  "rules": {
+    "import/no-dynamic-require": "off",
+    "global-require": "off"
+  }
+}

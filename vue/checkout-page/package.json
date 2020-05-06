@@ -1,0 +1,38 @@
+{
+  "name": "fed-interview-exercise",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "npm run lint-one -- .",
+    "lint-one": "eslint --ext .js --ext .vue --ignore-path .gitignore",
+    "test": "cross-env BABEL_ENV=test vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "@rei/cdr-assets": "^0.3.0",
+    "babel-eslint": "^10.0.1",
+    "core-js": "^2.6.5",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.6.10",
+    "vue-test-utils": "^1.0.0-beta.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-unit-mocha": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "chai": "^4.1.2",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
